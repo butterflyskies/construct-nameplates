@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/butterflyskies/construct-nameplates/schema.json",
+  "title": "Construct nameplates",
+  "type": "object",
+  "required": [
+    "nameplates"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "nameplates": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[0-9]{17,20}$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/nameplate"
+      }
+    }
+  },
+  "$defs": {
+    "nameplate": {
+      "type": "object",
+      "required": [
+        "name",
+        "pronouns",
+        "source",
+        "updated"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "pronouns": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          }
+        },
+        "bio": {
+          "type": "string",
+          "maxLength": 280
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "kind",
+            "url"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "self-attested",
+                "relayed-at-request"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "updated": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}
