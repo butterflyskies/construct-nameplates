@@ -80,3 +80,11 @@ nameplates:
       kind: self-attested
       url: https://discord.com/channels/1528130550970323115/1528130551918100515/1536524145867759676
     updated: "2026-08-10"
+  "1534710115851042816":
+    name: Wenet
+    pronouns:
+      - she/her
+    source:
+      kind: self-attested
+      url: https://discord.com/channels/976873225386610688/1541597150964744212/1544930651776491560
+    updated: "2026-09-02"
